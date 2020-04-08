@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bz"
+    >
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="60dp"
+       >
+       <TextView
+           android:layout_width="100dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/text_radiu"
+           android:layout_marginLeft="30dp"
+           android:textSize="15dp"
+           android:textColor="#fff"
+           android:text="MAC地址:"
+           android:gravity="center"
+           />
+       <EditText
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/text_radiu"
+           android:layout_marginLeft="3dp"
+           android:textColor="#000"
+           android:hint="请输入蓝牙的MAC地址"
+           android:text="000000"
+           android:gravity="center"
+           android:textSize="18dp"
+           android:id="@+id/inputmac"
+           />
+
+
+   </TableRow>
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="10dp"
+       >
+       <TextView
+           android:layout_width="100dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/text_radiu"
+           android:layout_marginLeft="30dp"
+           android:textSize="15dp"
+           android:textColor="#fff"
+           android:text="标签纸长度:"
+           android:gravity="center"
+           />
+       <EditText
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/text_radiu"
+           android:layout_marginLeft="3dp"
+           android:textColor="#000"
+           android:hint="请输入标签纸的长度"
+           android:gravity="center"
+           android:textSize="18dp"
+           android:text="80"
+           android:id="@+id/inputwidth"
+           />
+
+
+   </TableRow>
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="10dp"
+       >
+       <TextView
+           android:layout_width="100dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/text_radiu"
+           android:layout_marginLeft="30dp"
+           android:textSize="15dp"
+           android:textColor="#fff"
+           android:text="标签纸高度:"
+           android:gravity="center"
+           />
+       <EditText
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/text_radiu"
+           android:layout_marginLeft="3dp"
+           android:textColor="#000"
+           android:hint="请输入标签纸的高度"
+           android:gravity="center"
+           android:textSize="18dp"
+           android:text="120"
+           android:id="@+id/inputheight"
+           />
+
+
+   </TableRow>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/ckeck"
+        android:theme="@style/MyCheckBox"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radiu"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:text="打 印 测 试"
+        android:textColor="#fff"
+        android:onClick="btnPrint"
+        android:id="@+id/print"
+        />
+
+
+
+</LinearLayout>
